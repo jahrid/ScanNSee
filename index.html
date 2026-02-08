@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="1.css">
+    <meta name="robots" content="noindex, nofollow">
+    <title>ScanNSee</title>
+</head>
+<body>
+    <button id="click-me">Click Me </button>
+
+    <div class="Message" id="message">
+        <div class="innerMSG">
+            <h1>Bible Verse Of The Day</h1>
+            <p>Philippians 4:13 “I can do all this through him who gives me strength.”</p>
+            <button id="close-button">Close</button>
+        </div>
+    </div>
+    <script>
+        const openBtn = document.getElementById('click-me');
+        const closeBtn = document.getElementById('close-button');
+        const message = document.getElementById('message');
+
+        openBtn.addEventListener('click', () => {
+        message.classList.add('open');
+    });    
+
+        closeBtn.addEventListener('click', () => {
+        message.classList.remove('open');
+    });
+    </script>
+    <img src="51V+1wd2dFL-removebg-preview.png" alt="" class="posa2">
+    <img src="images-removebg-preview.png" alt="#" class="posa">
+</body>
+</html>
